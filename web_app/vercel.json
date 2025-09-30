@@ -1,0 +1,15 @@
+{
+  "functions": {
+    "api/vercel.py": {
+      "runtime": "python3.9",
+      "maxDuration": 30,
+      "memory": 1024
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/vercel.py"
+    }
+  ]
+}
